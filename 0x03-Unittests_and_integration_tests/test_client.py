@@ -6,6 +6,8 @@ import unittest
 from unittest.mock import patch
 from parameterized import parameterized
 from client import GithubOrgClient
+from unittest.mock import patch, PropertyMock
+
 
 
 class TestGithubOrgClient(unittest.TestCase):
@@ -28,13 +30,6 @@ class TestGithubOrgClient(unittest.TestCase):
         self.assertEqual(result, test_payload)
 
 
-#!/usr/bin/env python3
-"""
-Unit tests for GithubOrgClient properties
-"""
-import unittest
-from unittest.mock import patch, PropertyMock
-from client import GithubOrgClient
 
 
 class TestGithubOrgClient(unittest.TestCase):
@@ -47,11 +42,6 @@ class TestGithubOrgClient(unittest.TestCase):
             client = GithubOrgClient("testorg")
             self.assertEqual(client._public_repos_url, "https://api.github.com/orgs/testorg/repos")
 
-
-if __name__ == "__main__":
-    unittest.main()
-666666666666
-66666666666666666686666666666666666666666666666666666y
 
 
 if __name__ == "__main__":
